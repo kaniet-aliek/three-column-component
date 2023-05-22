@@ -1,0 +1,160 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    
+}
+
+
+html, body{
+    height: 100%;
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg{
+    display: block;
+    min-width: 100%;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+p, h1 , h2, h3, h4, h5, h6{
+    overflow: break-word;
+
+}
+
+#root, #__next{
+    isolation: isolate;
+
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    max-width: 1440px;
+    height: auto;
+    background-color: #fff;
+}
+
+.container{
+    width: 900px;
+    height: 450px;
+    margin: 20% auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.section{
+    width: 300px;
+    height: auto;
+    
+
+}
+
+.section__inside{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+    
+}
+
+.section__sedans{
+    background-color: var(--bright-orange);
+    border-radius: 10px 0  0 10px;
+}
+
+.section__suvs{
+    background-color: var(--dark-cyan);
+}
+
+.section__luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius:  0 10px 10px 0;
+}
+
+.title{
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.description{
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    border-style: none;
+    border-radius: 20px;
+
+}
+
+.orange{
+    color: var(--bright-orange);
+}
+
+.blue{
+    color: var(--dark-cyan);
+}
+
+.green{
+    color: var(--very-dark-cyan);
+}
+
+
+@media(max-width: 620px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 63% auto;
+    }
+
+    .section__inside{
+        padding: 40px;
+    }
+
+    .section__sedans{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .section__luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
